@@ -1,0 +1,170 @@
+{
+ "generated_at": "2026-11-13T06:20:00Z",
+ "briefs": [
+  {
+   "run_date": "2026-11-13",
+   "story_count": 37,
+   "mood_score": 0.25,
+   "mood_label": "Mildly positive",
+   "emails_sent": 1
+  }
+ ],
+ "articles": [
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 11:08",
+   "source": "BusinessLine",
+   "title": "Sensex today | Stock Market Live: Sensex down 150 pts, Nifty slips near 25,200; M&M, HDFC Bank lead losers",
+   "link": "https://www.thehindubusinessline.com/markets/",
+   "summary": "Indian benchmarks Sensex and Nifty opened lower amid inflation concerns and rising global oil prices.",
+   "simple_words": "The stock market fell slightly because of high inflation and expensive crude oil.",
+   "category": "Markets",
+   "sentiment": "negative",
+   "importance": 5,
+   "topic": "Sensex opening fall"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 11:10",
+   "source": "BusinessLine",
+   "title": "Q2 Results Today Live: Grasim Ind, Eicher Motors, ABB India, Tata Motors PV and others to announce Q2 results",
+   "link": "https://www.thehindubusinessline.com/companies/",
+   "summary": "Several major Indian companies are announcing their Q2 financial results today.",
+   "simple_words": "Keep an eye on stock prices as big companies report their earnings today.",
+   "category": "Companies",
+   "sentiment": "neutral",
+   "importance": 5,
+   "topic": "Q2 results day"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 10:16",
+   "source": "Economic Times",
+   "title": "India bonds under pressure before debt supply; hot inflation prints pinch further",
+   "link": "https://economictimes.indiatimes.com/markets/",
+   "summary": "Indian government bonds face selling pressure as rising inflation expectations trigger yield increases.",
+   "simple_words": "Investors are selling bonds because they fear inflation will push interest rates up.",
+   "category": "Economy",
+   "sentiment": "negative",
+   "importance": 5,
+   "topic": "Bond selloff inflation"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 10:01",
+   "source": "Livemint",
+   "title": "NVIDIA share price crash: Broadcom, AMD to Micron — Should you buy other AI stocks after Jensen Huang's resignation?",
+   "link": "https://www.livemint.com/market/",
+   "summary": "NVIDIA faces market instability following the resignation of CEO Jensen Huang, impacting related AI stocks.",
+   "simple_words": "Big changes at Nvidia are making investors nervous about AI stocks.",
+   "category": "Global",
+   "sentiment": "negative",
+   "importance": 4,
+   "topic": "NVIDIA CEO exit"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 09:29",
+   "source": "BusinessLine",
+   "title": "Nvidia PE falls to 14-year low, but CEO exit and AI worries cloud the bargain",
+   "link": "https://www.thehindubusinessline.com/markets/",
+   "summary": "NVIDIA stock faces selling pressure with its P/E ratio at a 14-year low amid leadership concerns.",
+   "simple_words": "NVIDIA shares are cheaper but investors are worried about the CEO's departure.",
+   "category": "Global",
+   "sentiment": "negative",
+   "importance": 3,
+   "topic": "NVIDIA CEO exit"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 11:00",
+   "source": "BusinessLine",
+   "title": "Crystal Crop Protection to raise up to ₹456 cr via IPO; issue opens on Nov 18",
+   "link": "https://www.thehindubusinessline.com/markets/",
+   "summary": "Crystal Crop Protection is set to launch its ₹456 crore IPO on November 18.",
+   "simple_words": "A new company is launching its public share sale to raise money.",
+   "category": "Markets",
+   "sentiment": "positive",
+   "importance": 4,
+   "topic": "Crystal Crop IPO"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 10:50",
+   "source": "Livemint",
+   "title": "Anthropic IPO oversubscribed nearly six times; can AI firm become new NVIDIA amid stock crash? Experts' views",
+   "link": "https://www.livemint.com/market/",
+   "summary": "The Anthropic IPO has received overwhelming demand, being oversubscribed six times by investors.",
+   "simple_words": "Huge interest from investors in the new AI company's stock sale.",
+   "category": "Global",
+   "sentiment": "positive",
+   "importance": 4,
+   "topic": "Anthropic IPO"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 10:20",
+   "source": "RBI",
+   "title": "Result of the 3-day Variable Rate Reverse Repo (VRRR) auction held on November 13, 2026",
+   "link": "https://www.rbi.org.in/",
+   "summary": "The RBI accepted ₹38,592 crore in its latest 3-day variable rate reverse repo auction.",
+   "simple_words": "The central bank is managing extra cash in the banking system.",
+   "category": "RBI/Policy",
+   "sentiment": "neutral",
+   "importance": 3,
+   "topic": "RBI VRRR auction"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 09:39",
+   "source": "BusinessLine",
+   "title": "G-Sec yields harden on retail inflation breaching the 6% mark",
+   "link": "https://www.thehindubusinessline.com/markets/",
+   "summary": "Benchmark 10-year G-Sec yields hit 7.30% as markets price in potential RBI repo rate hikes due to inflation.",
+   "simple_words": "Bond yields rose as investors expect the RBI to increase interest rates.",
+   "category": "RBI/Policy",
+   "sentiment": "negative",
+   "importance": 4,
+   "topic": "G-Sec yields inflation"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 11:20",
+   "source": "Livemint",
+   "title": "TD Power Systems share price soars over 9%: Dividend declared, Q2 profit more than doubles",
+   "link": "https://www.livemint.com/market/",
+   "summary": "TD Power Systems shares surged 9% following a 105% jump in quarterly profit and an interim dividend.",
+   "simple_words": "Strong profits and dividends boosted the stock price significantly today.",
+   "category": "Companies",
+   "sentiment": "positive",
+   "importance": 3,
+   "topic": "TD Power results"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 10:45",
+   "source": "Economic Times",
+   "title": "Carlsberg said to start road show for $600 million India IPO",
+   "link": "https://economictimes.indiatimes.com/markets/",
+   "summary": "Carlsberg is planning a $600 million IPO for its Indian operations, targeting a valuation of $4 billion.",
+   "simple_words": "Carlsberg plans to list its Indian business on the stock market soon.",
+   "category": "Companies",
+   "sentiment": "positive",
+   "importance": 3,
+   "topic": "Carlsberg India IPO"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 10:14",
+   "source": "BusinessLine",
+   "title": "Rupee rises 7 paise to 94.05 against US dollar in early trade",
+   "link": "https://www.thehindubusinessline.com/markets/",
+   "summary": "The Indian rupee appreciated by 7 paise against the US dollar amid mixed cues.",
+   "simple_words": "The rupee gained slight strength against the US dollar today.",
+   "category": "Economy",
+   "sentiment": "positive",
+   "importance": 2,
+   "topic": "Rupee early trade"
+  }
+ ]
+}

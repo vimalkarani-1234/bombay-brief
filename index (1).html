@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Bombay Brief AI</title>
+<meta name="description" content="An AI-curated morning brief of Indian market and finance news, rebuilt automatically every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b2a30; --muted:#5f6f75; --faint:#8a989d; --line:#e4e1d8;
+    --paper:#f7f4ec; --card:#ffffff; --brand:#1F4E5F; --brand-2:#2c6a7f;
+    --accent:#d98e2b; --pos:#1a7f37; --neg:#cf222e; --neu:#6e7781;
+    --pos-bg:#e7f4ea; --neg-bg:#fbe9ea; --neu-bg:#eef0f1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#e8ecee; --muted:#a6b3b8; --faint:#7d8b90; --line:#2b3a40;
+      --paper:#111a1e; --card:#172328; --brand:#1F4E5F; --brand-2:#3b8aa3;
+      --accent:#e6a24a; --pos:#4cc26b; --neg:#ff6b6b; --neu:#9aa5ab;
+      --pos-bg:#16301f; --neg-bg:#3a1b1d; --neu-bg:#222d32;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,Arial,sans-serif;line-height:1.5}
+  a{color:inherit}
+  .wrap{max-width:980px;margin:0 auto;padding:0 16px}
+
+  header.mast{background:var(--brand);color:#fff;padding:28px 0 22px}
+  .mast .top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+  .brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:clamp(28px,5vw,42px);letter-spacing:-.5px;margin:0}
+  .brand span{color:var(--accent)}
+  .tag{margin:4px 0 0;opacity:.85;font-size:14px}
+  .datepick{display:flex;align-items:center;gap:8px;font-size:13px}
+  .datepick select{font:inherit;padding:7px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff}
+  .datepick select option{color:#111}
+  .dateline{margin-top:14px;font-size:13px;opacity:.9;border-top:1px solid rgba(255,255,255,.2);padding-top:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+  @media (max-width:760px){.grid{grid-template-columns:1fr}}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .panel h3{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+  .big{font-family:Fraunces,Georgia,serif;font-size:28px;font-weight:700;line-height:1.1}
+  .sub{font-size:13px;color:var(--muted);margin-top:4px}
+
+  .meter{position:relative;height:10px;border-radius:99px;margin:14px 0 6px;
+    background:linear-gradient(90deg,var(--neg),var(--neu) 50%,var(--pos))}
+  .meter .pin{position:absolute;top:-5px;width:4px;height:20px;border-radius:3px;background:var(--ink);transform:translateX(-50%);box-shadow:0 0 0 3px var(--card)}
+  .scale{display:flex;justify-content:space-between;font-size:11px;color:var(--faint)}
+
+  svg.spark{width:100%;height:70px;display:block;margin-top:6px}
+
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 18px}
+  .chip{font:inherit;font-size:13px;padding:6px 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+  .chip[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
+
+  h2.sec{font-family:Fraunces,Georgia,serif;font-size:22px;margin:26px 0 12px;display:flex;align-items:baseline;gap:10px}
+  h2.sec small{font-family:Inter,sans-serif;font-size:13px;color:var(--muted);font-weight:500}
+
+  .stories{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media (max-width:760px){.stories{grid-template-columns:1fr}}
+  .story{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+  .story.lead{grid-column:1/-1;border-left:4px solid var(--accent)}
+  .story.lead .title{font-size:21px}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;color:var(--muted)}
+  .pill{padding:2px 8px;border-radius:99px;font-weight:600;font-size:11px;text-transform:capitalize}
+  .pill.positive{background:var(--pos-bg);color:var(--pos)}
+  .pill.negative{background:var(--neg-bg);color:var(--neg)}
+  .pill.neutral{background:var(--neu-bg);color:var(--neu)}
+  .cat{background:var(--neu-bg);padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;color:var(--ink)}
+  .dots{letter-spacing:2px;color:var(--accent);font-size:11px}
+  .dots i{color:var(--line);font-style:normal}
+  .title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:17px;line-height:1.3;text-decoration:none}
+  .title:hover{text-decoration:underline}
+  .summary{font-size:14px;margin:0}
+  .simple{font-size:13px;color:var(--muted);margin:0;padding:8px 10px;background:var(--paper);border-radius:8px}
+  .simple b{color:var(--ink);font-weight:600}
+  .time{margin-left:auto;color:var(--faint)}
+
+  .all{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .row{display:grid;grid-template-columns:70px 1fr auto;gap:12px;padding:10px 14px;border-top:1px solid var(--line);align-items:center;font-size:14px}
+  .row:first-child{border-top:0}
+  .row .t{color:var(--faint);font-size:12px}
+  .row a{text-decoration:none}
+  .row a:hover{text-decoration:underline}
+  .row .s{font-size:12px;color:var(--muted)}
+  @media (max-width:560px){.row{grid-template-columns:1fr}.row .t{order:2}}
+
+  .how{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:8px 0 10px}
+  @media (max-width:760px){.how{grid-template-columns:1fr 1fr}}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;font-size:13px}
+  .step b{display:block;font-size:12px;color:var(--brand-2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+
+  footer{margin:34px 0 0;padding:22px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+  .empty{padding:40px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1 class="brand">The Bombay Brief <span>AI</span></h1>
+        <p class="tag">Indian markets &amp; finance news, read and summarised by AI every morning.</p>
+      </div>
+      <label class="datepick">Edition
+        <select id="edition" aria-label="Choose edition"></select>
+      </label>
+    </div>
+    <div class="dateline"><span id="prettyDate">Loading…</span><span id="updated"></span></div>
+  </div>
+</header>
+
+<main class="wrap" id="app">
+  <div class="empty">Loading today's brief…</div>
+</main>
+
+<div class="wrap">
+  <h2 class="sec">How this works <small>an automated data pipeline</small></h2>
+  <div class="how">
+    <div class="step"><b>1 · Collect</b>n8n pulls headlines from Economic Times, Livemint, BusinessLine and RBI feeds.</div>
+    <div class="step"><b>2 · Clean</b>Old news, filler posts and duplicate stories are filtered out.</div>
+    <div class="step"><b>3 · Understand</b>Google Gemini summarises, categorises and scores each story's sentiment and importance.</div>
+    <div class="step"><b>4 · Store</b>Every story is saved to Google Sheets, building a daily dataset.</div>
+    <div class="step"><b>5 · Publish</b>Subscribers get an email, and this page is rebuilt via a GitHub commit.</div>
+  </div>
+  <footer>
+    Summaries are generated automatically by AI from public news feeds and may contain errors. Not investment advice.
+    Headlines link to the original publishers. Built with n8n, Google Gemini, Google Sheets and GitHub Pages as an MBA Data Engineering &amp; Web Hosting project.
+  </footer>
+</div>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmtDate = d => new Date(d + 'T00:00:00Z').toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+  const val = {positive:1, neutral:0, negative:-1};
+  let DATA = null, currentCat = 'All';
+
+  function dots(n){ n = Math.max(1, Math.min(5, Number(n)||1)); return '●'.repeat(n) + '<i>' + '●'.repeat(5-n) + '</i>'; }
+
+  function moodFor(items){
+    const w = items.reduce((s,a)=> s + (Number(a.importance)||1), 0);
+    const raw = w ? items.reduce((s,a)=> s + (val[a.sentiment]??0)*(Number(a.importance)||1), 0)/w : 0;
+    const label = raw>0.3?'Bullish':raw>0.1?'Mildly positive':raw<-0.3?'Bearish':raw<-0.1?'Mildly negative':'Neutral';
+    return {score: Math.round(raw*100)/100, label};
+  }
+
+  function topStories(items){
+    const sorted = [...items].sort((a,b)=> (b.importance-a.importance) || String(b.published_at).localeCompare(String(a.published_at)));
+    const used = new Set(), top = [];
+    for (const a of sorted){
+      const t = String(a.topic || a.title).toLowerCase().trim();
+      if (used.has(t)) continue;
+      used.add(t); top.push(a);
+      if (top.length === 8) break;
+    }
+    return top;
+  }
+
+  function streak(dates){
+    if (!dates.length) return 0;
+    const set = new Set(dates); let d = new Date(dates[0]+'T00:00:00Z'), n = 0;
+    while (set.has(d.toISOString().slice(0,10))){ n++; d.setUTCDate(d.getUTCDate()-1); }
+    return n;
+  }
+
+  function spark(briefs){
+    const pts = [...briefs].sort((a,b)=> a.run_date.localeCompare(b.run_date)).slice(-30);
+    const W=300,H=70,P=6;
+    if (!pts.length) return '';
+    const x = i => pts.length===1 ? W/2 : P + i*(W-2*P)/(pts.length-1);
+    const y = v => H/2 - (Number(v)||0)*(H/2-P);
+    const line = pts.map((p,i)=> (i?'L':'M')+x(i).toFixed(1)+' '+y(p.mood_score).toFixed(1)).join(' ');
+    const circles = pts.map((p,i)=> `<circle cx="${x(i).toFixed(1)}" cy="${y(p.mood_score).toFixed(1)}" r="3" fill="var(--brand-2)"><title>${esc(p.run_date)}: ${esc(p.mood_score)}</title></circle>`).join('');
+    return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Mood score trend">
+      <line x1="0" x2="${W}" y1="${H/2}" y2="${H/2}" stroke="var(--line)" stroke-dasharray="4 4"/>
+      <path d="${line}" fill="none" stroke="var(--brand-2)" stroke-width="2" vector-effect="non-scaling-stroke"/>${circles}</svg>`;
+  }
+
+  function card(a, lead){
+    const time = String(a.published_at||'').slice(11,16);
+    return `<article class="story${lead?' lead':''}">
+      <div class="meta"><span class="cat">${esc(a.category)}</span><span>${esc(a.source)}</span>
+        <span class="pill ${esc(a.sentiment)}">${esc(a.sentiment)}</span>
+        <span class="dots" title="Importance ${esc(a.importance)} of 5">${dots(a.importance)}</span>
+        <span class="time">${esc(time)}</span></div>
+      <a class="title" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a>
+      <p class="summary">${esc(a.summary)}</p>
+      ${a.simple_words ? `<p class="simple"><b>In simple words:</b> ${esc(a.simple_words)}</p>` : ''}
+    </article>`;
+  }
+
+  function render(date){
+    const dayItems = DATA.articles.filter(a => a.run_date === date);
+    const brief = DATA.briefs.find(b => b.run_date === date);
+    $('#prettyDate').textContent = fmtDate(date);
+    if (!dayItems.length){ $('#app').innerHTML = '<div class="empty">No stories for this edition.</div>'; return; }
+
+    const mood = brief ? {score:Number(brief.mood_score), label:brief.mood_label} : moodFor(dayItems);
+    const top = topStories(dayItems);
+    const neg = top.filter(a=>a.sentiment==='negative').length, pos = top.filter(a=>a.sentiment==='positive').length, neu = top.length-neg-pos;
+    const moodColor = mood.score>0.1?'var(--pos)':mood.score<-0.1?'var(--neg)':'var(--neu)';
+    const dates = DATA.briefs.map(b=>b.run_date).sort().reverse();
+    const cats = ['All', ...Object.entries(dayItems.reduce((m,a)=>(m[a.category]=(m[a.category]||0)+1,m),{})).sort((a,b)=>b[1]-a[1]).map(e=>e[0])];
+    if (!cats.includes(currentCat)) currentCat = 'All';
+
+    const filtered = currentCat==='All' ? dayItems : dayItems.filter(a=>a.category===currentCat);
+    const topShown = currentCat==='All' ? top : topStories(filtered);
+    const rest = [...filtered].sort((a,b)=> String(b.published_at).localeCompare(String(a.published_at)));
+
+    $('#app').innerHTML = `
+      <section class="grid">
+        <div class="panel">
+          <h3>Market mood</h3>
+          <div class="big" style="color:${moodColor}">${esc(mood.label)}</div>
+          <div class="meter"><div class="pin" style="left:${((Math.max(-1,Math.min(1,mood.score))+1)/2*100).toFixed(1)}%"></div></div>
+          <div class="scale"><span>Bearish −1</span><span>0</span><span>+1 Bullish</span></div>
+          <div class="sub">Score ${esc(mood.score)} · top stories: ${neg} negative · ${pos} positive · ${neu} neutral</div>
+        </div>
+        <div class="panel">
+          <h3>Mood trend</h3>
+          ${spark(DATA.briefs)}
+          <div class="sub">Daily importance-weighted sentiment, last ${Math.min(30,DATA.briefs.length)} editions</div>
+        </div>
+        <div class="panel">
+          <h3>Pipeline</h3>
+          <div class="big">${streak(dates)} day${streak(dates)===1?'':'s'}</div>
+          <div class="sub">running in a row · ${DATA.briefs.length} edition${DATA.briefs.length===1?'':'s'} published</div>
+          <div class="sub">${dayItems.length} stories processed for this edition</div>
+        </div>
+      </section>
+
+      <nav class="filters" aria-label="Filter by category">
+        ${cats.map(c=>`<button class="chip" data-cat="${esc(c)}" aria-pressed="${c===currentCat}">${esc(c)}</button>`).join('')}
+      </nav>
+
+      <h2 class="sec">Top stories <small>ranked by AI importance, one per event</small></h2>
+      <section class="stories">${topShown.map((a,i)=>card(a, i===0)).join('')}</section>
+
+      <h2 class="sec">All stories <small>${rest.length} stories, newest first</small></h2>
+      <section class="all">${rest.map(a=>`
+        <div class="row"><span class="t">${esc(String(a.published_at||'').slice(11,16))}</span>
+          <span><a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a><br><span class="s">${esc(a.source)} · ${esc(a.category)}</span></span>
+          <span class="pill ${esc(a.sentiment)}">${esc(a.sentiment)}</span></div>`).join('')}
+      </section>`;
+
+    document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => { currentCat = b.dataset.cat; render(date); }));
+  }
+
+  fetch('data.json?v=' + Date.now())
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => {
+      DATA = { briefs: d.briefs || [], articles: d.articles || [], generated_at: d.generated_at };
+      const dates = [...new Set([...DATA.briefs.map(b=>b.run_date), ...DATA.articles.map(a=>a.run_date)])].sort().reverse();
+      if (!dates.length){ $('#app').innerHTML = '<div class="empty">No editions yet. Check back after the next run.</div>'; return; }
+      $('#edition').innerHTML = dates.map(d=>`<option value="${d}">${fmtDate(d)}</option>`).join('');
+      $('#edition').addEventListener('change', e => render(e.target.value));
+      if (DATA.generated_at) $('#updated').textContent = 'Last updated ' + new Date(DATA.generated_at).toLocaleString('en-IN',{timeZone:'Asia/Kolkata',dateStyle:'medium',timeStyle:'short'}) + ' IST';
+      render(dates[0]);
+    })
+    .catch(() => { $('#app').innerHTML = '<div class="empty">Couldn\'t load the news data right now. Please refresh in a minute.</div>'; });
+})();
+</script>
+</body>
+</html>
