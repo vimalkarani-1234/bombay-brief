@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-13T13:00:00.195Z",
+ "generated_at": "2026-11-13T13:10:39.525Z",
  "briefs": [
   {
    "run_date": "2026-11-13",
    "story_count": 40,
-   "mood_score": 0.29,
-   "mood_label": "Mildly positive",
+   "mood_score": 0.35,
+   "mood_label": "Bullish",
    "emails_sent": 4
   }
  ],
@@ -802,6 +802,19 @@
    "sentiment": "negative",
    "importance": 3,
    "topic": "Currency fluctuations"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 18:36",
+   "source": "BusinessLine",
+   "title": "HDFC MF enters SIF segment with launch of hybrid long-short strategy",
+   "link": "https://www.thehindubusinessline.com/markets/hdfc-mf-enters-sif-segment-with-launch-of-hybrid-long-short-strategy/article71697850.ece",
+   "summary": "HDFC Mutual Fund has launched a new hybrid long-short strategy in the SIF category, which has seen rapid asset growth.",
+   "simple_words": "HDFC launched a new investment fund following significant growth in this category.",
+   "category": "Companies",
+   "sentiment": "positive",
+   "importance": 3,
+   "topic": "Mutual Fund Expansion"
   }
  ]
 }
