@@ -95,6 +95,19 @@
 
   footer{margin:34px 0 0;padding:22px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
   .empty{padding:40px;text-align:center;color:var(--muted)}
+
+  .signup{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:16px 18px;margin:22px 0 0;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .signup .pitch{flex:1 1 260px}
+  .signup .pitch b{font-family:Fraunces,Georgia,serif;font-size:19px;display:block}
+  .signup .pitch span{font-size:13px;color:var(--muted)}
+  .signup form{display:flex;gap:8px;flex:2 1 420px;flex-wrap:wrap}
+  .signup input{font:inherit;font-size:14px;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);flex:1 1 140px;min-width:0}
+  .signup button{font:inherit;font-size:14px;font-weight:600;padding:10px 18px;border-radius:8px;border:0;background:var(--brand);color:#fff;cursor:pointer}
+  .signup button:disabled{opacity:.6;cursor:default}
+  .signup .note{flex-basis:100%;font-size:12px;color:var(--muted);margin:0}
+  .signup .note a{color:var(--muted)}
+  .signup .msg{flex-basis:100%;font-size:14px;margin:0;font-weight:600}
+  .signup .msg.ok{color:var(--pos)} .signup .msg.err{color:var(--neg)}
 </style>
 </head>
 <body>
@@ -113,6 +126,19 @@
   </div>
 </header>
 
+<div class="wrap">
+  <section class="signup" id="subscribe" aria-label="Subscribe">
+    <div class="pitch"><b>☕ Get it in your inbox</b><span>Top stories, market mood and plain-English summaries every morning. Free.</span></div>
+    <form id="subForm" novalidate>
+      <input id="subName" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+      <input id="subEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+      <button id="subBtn" type="submit">Subscribe</button>
+      <p class="msg" id="subMsg" role="status" hidden></p>
+      <p class="note">We only use your email to send the brief. Reply "unsubscribe" anytime. <a href="privacy.html">Privacy policy</a></p>
+    </form>
+  </section>
+</div>
+
 <main class="wrap" id="app">
   <div class="empty">Loading today's brief…</div>
 </main>
@@ -128,7 +154,7 @@
   </div>
   <footer>
     Summaries are generated automatically by AI from public news feeds and may contain errors. Not investment advice.
-    Headlines link to the original publishers. Built with n8n, Google Gemini, Google Sheets and GitHub Pages as an MBA Data Engineering &amp; Web Hosting project.
+    Headlines link to the original publishers. Built with n8n, Google Gemini, Google Sheets and GitHub Pages as an MBA Data Engineering &amp; Web Hosting project. <a href="privacy.html">Privacy policy</a>
   </footer>
 </div>
 
@@ -263,6 +289,45 @@
       render(dates[0]);
     })
     .catch(() => { $('#app').innerHTML = '<div class="empty">Couldn\'t load the news data right now. Please refresh in a minute.</div>'; });
+})();
+</script>
+
+<script>
+(function(){
+  const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf0UGLT03LMgJ9mjm0uJsVJ_WNDLwHW0QzdCocM-B0uL2Wg9Q/formResponse';
+  const NAME_FIELD = 'entry.1016413495';
+  const EMAIL_FIELD = 'entry.1610336002';
+
+  const form = document.getElementById('subForm');
+  const name = document.getElementById('subName');
+  const email = document.getElementById('subEmail');
+  const btn = document.getElementById('subBtn');
+  const msg = document.getElementById('subMsg');
+  const show = (text, ok) => { msg.textContent = text; msg.className = 'msg ' + (ok ? 'ok' : 'err'); msg.hidden = false; };
+
+  try { if (localStorage.getItem('bb_subscribed')) show("You're subscribed ✓ See you tomorrow morning.", true); } catch (e) {}
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const n = name.value.trim(), m = email.value.trim();
+    if (!n) { show('Please enter your name.', false); name.focus(); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)) { show('Please enter a valid email address.', false); email.focus(); return; }
+
+    btn.disabled = true; btn.textContent = 'Subscribing…';
+    const body = new URLSearchParams();
+    body.append(NAME_FIELD, n);
+    body.append(EMAIL_FIELD, m);
+    try {
+      await fetch(FORM_URL, { method: 'POST', mode: 'no-cors', body });
+      show("You're in ✓ Check your inbox for a welcome email.", true);
+      form.reset();
+      try { localStorage.setItem('bb_subscribed', '1'); } catch (e) {}
+    } catch (err) {
+      show("Couldn't subscribe right now. Please check your connection and try again.", false);
+    } finally {
+      btn.disabled = false; btn.textContent = 'Subscribe';
+    }
+  });
 })();
 </script>
 </body>
