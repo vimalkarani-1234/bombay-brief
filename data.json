@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-13T09:42:40.110Z",
+ "generated_at": "2026-11-13T09:55:54.473Z",
  "briefs": [
   {
    "run_date": "2026-11-13",
-   "story_count": 0,
-   "mood_score": 0,
-   "mood_label": "",
-   "emails_sent": 0
+   "story_count": 40,
+   "mood_score": 0.15,
+   "mood_label": "Mildly positive",
+   "emails_sent": 1
   }
  ],
  "articles": [
@@ -428,7 +428,7 @@
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 9:55",
+   "published_at": "2026-11-13 09:55",
    "source": "RBI",
    "title": "Result of Underwriting Auction conducted on November 13, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63967",
@@ -441,7 +441,7 @@
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 9:39",
+   "published_at": "2026-11-13 09:39",
    "source": "BusinessLine",
    "title": "G-Sec yields harden on retail inflation breaching the 6% mark",
    "link": "https://www.thehindubusinessline.com/markets/g-sec-yields-harden-on-retail-inflation-breaching-the-6-mark/article71696503.ece",
@@ -454,7 +454,7 @@
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 9:29",
+   "published_at": "2026-11-13 09:29",
    "source": "BusinessLine",
    "title": "Nvidia PE falls to 14-year low, but CEO exit and AI worries cloud the bargain",
    "link": "https://www.thehindubusinessline.com/markets/stock-markets/nvidia-pe-falls-to-14-year-low-but-ceo-exit-and-ai-worries-cloud-the-bargain/article71696470.ece",
@@ -467,7 +467,7 @@
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 9:21",
+   "published_at": "2026-11-13 09:21",
    "source": "Economic Times",
    "title": "Aditya Birla Capital among 9 stocks showing White Marubozu Pattern",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/aditya-birla-capital-among-9-stocks-showing-white-marubozu-pattern/slideshow/135788959.cms",
@@ -480,7 +480,7 @@
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 9:14",
+   "published_at": "2026-11-13 09:14",
    "source": "Economic Times",
    "title": "One97 Communications among 3 stocks closing above VWAP",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/one97-communications-among-3-stocks-closing-above-vwap/slideshow/135788620.cms",
@@ -493,7 +493,7 @@
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 9:06",
+   "published_at": "2026-11-13 09:06",
    "source": "Economic Times",
    "title": "Godrej Industries among 4 stocks showing RSI trending up",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/godrej-industries-among-4-stocks-showing-rsi-trending-up/slideshow/135788392.cms",
@@ -506,7 +506,7 @@
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 9:00",
+   "published_at": "2026-11-13 09:00",
    "source": "RBI",
    "title": "Money Market Operations as on November 12, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63966",
@@ -519,7 +519,7 @@
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 8:36",
+   "published_at": "2026-11-13 08:36",
    "source": "Economic Times",
    "title": "Positive Breakout: These 8 stocks close above their 200 DMA",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-close-above-their-200-dma/slideshow/135787610.cms",
