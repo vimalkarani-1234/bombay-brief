@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-13T09:55:54.473Z",
+ "generated_at": "2026-11-13T10:15:27.416Z",
  "briefs": [
   {
    "run_date": "2026-11-13",
    "story_count": 40,
-   "mood_score": 0.15,
+   "mood_score": 0.27,
    "mood_label": "Mildly positive",
    "emails_sent": 1
   }
@@ -12,42 +12,81 @@
  "articles": [
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 15:00",
-   "source": "BusinessLine",
-   "title": "Sensex today | Stock Market Live: Sensex down over 500 pts, Nifty below 25,100 as oil surges",
-   "link": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-13-november-2026/article71693403.ece",
-   "summary": "Indian benchmark indices declined as rising Brent crude prices and inflationary pressures overshadowed support from foreign institutional inflows.",
-   "simple_words": "Stock market fell due to high oil prices and inflation concerns.",
-   "category": "Markets",
-   "sentiment": "negative",
-   "importance": 5,
-   "topic": "Market Trends"
-  },
-  {
-   "run_date": "2026-11-13",
-   "published_at": "2026-11-13 14:58",
-   "source": "BusinessLine",
-   "title": "Q2 Results Today Live: Grasim Ind, Eicher Motors, ABB India, Tata Motors PV, Manipal Health, Rail Vikas Nigam, Godrej Industries, Gillette Share to announce Q2 results",
-   "link": "https://www.thehindubusinessline.com/companies/q2-results-today-live-updates-grasim-ind-eicher-motors-abb-india-tata-motors-pv-manipal-health-rail-vikas-nigam-godrej-ind-gillette-company-results-13-november-2026/article71696618.ece",
-   "summary": "Several major companies, including Tata Motors and Grasim Industries, are scheduled to announce their second-quarter financial results today.",
-   "simple_words": "Key companies are releasing their financial performance reports today.",
+   "published_at": "2026-11-13 15:40",
+   "source": "Livemint",
+   "title": "Circuit-to-circuit stock SC Agrotech declares 4:5 bonus, 1:10 stock split, dividend update; record date, other details",
+   "link": "https://www.livemint.com/market/stock-market-news/circuittocircuit-stock-sc-agrotech-declares-4-5-bonus-1-10-stock-split-dividend-update-record-date-other-details-11794564352785.html",
+   "summary": "SC Agrotech shares surged after the company announced a 4:5 bonus issue and a 1:10 stock split, pending shareholder approval.",
+   "simple_words": "Company is giving more shares to existing owners to boost liquidity.",
    "category": "Companies",
-   "sentiment": "neutral",
-   "importance": 4,
-   "topic": "Q2 Earnings"
+   "sentiment": "positive",
+   "importance": 2,
+   "topic": "Corporate Actions"
   },
   {
    "run_date": "2026-11-13",
-   "published_at": "2026-11-13 14:56",
-   "source": "BusinessLine",
-   "title": "Gold demand stays firm as lower prices draw festive buying",
-   "link": "https://www.thehindubusinessline.com/markets/gold/gold-demand-stays-firm-as-lower-prices-draw-festive-buying/article71696958.ece",
-   "summary": "Domestic gold demand has strengthened as consumers take advantage of a recent price dip to make festive season purchases.",
-   "simple_words": "People are buying more gold because prices have recently fallen.",
+   "published_at": "2026-11-13 15:31",
+   "source": "Livemint",
+   "title": "Looking for stocks to buy for 2027? HDFC Bank, Meesho, Paytm, Park Medi, LG Electronics - Ventura's top picks revealed",
+   "link": "https://www.livemint.com/market/stock-market-news/looking-for-stocks-to-buy-for-2027-hdfc-bank-meesho-paytm-park-medi-lg-electronics-venturas-top-picks-revealed-11794556121055.html",
+   "summary": "Ventura Securities has identified HDFC Bank, Meesho, Paytm, Park Medi, and LG Electronics as top investment picks for 2027.",
+   "simple_words": "Analysts suggest these companies have strong potential for long-term growth.",
    "category": "Markets",
    "sentiment": "positive",
    "importance": 3,
-   "topic": "Gold Price Movement"
+   "topic": "Market Outlook"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 15:31",
+   "source": "BusinessLine",
+   "title": "Arihant Capital Markets gets SEBI nod to launch mutual fund biz",
+   "link": "https://www.thehindubusinessline.com/markets/arihant-capital-markets-gets-sebi-nod-to-launch-mutual-fund-biz/article71697257.ece",
+   "summary": "Arihant Capital Markets received SEBI approval to enter the mutual fund industry as an asset manager.",
+   "simple_words": "A new company is starting a mutual fund business for investors.",
+   "category": "Companies",
+   "sentiment": "positive",
+   "importance": 2,
+   "topic": "Business Expansion"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 15:28",
+   "source": "BusinessLine",
+   "title": "Sensex today | Stock Market Live: Sensex down 450 pts, Nifty at 25,100; BEL, M&M lead losers",
+   "link": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-13-november-2026/article71693403.ece",
+   "summary": "Indian markets fell on Friday due to rising Brent crude prices and inflationary pressures, despite support from foreign institutional inflows.",
+   "simple_words": "Stock prices dropped because of inflation and high oil costs.",
+   "category": "Markets",
+   "sentiment": "negative",
+   "importance": 5,
+   "topic": "Market Performance"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 15:16",
+   "source": "BusinessLine",
+   "title": "Q2 Results Today Live: Grasim Ind, Eicher Motors, ABB India, Tata Motors PV, Manipal Health, Rail Vikas Nigam, Godrej Industries, Gillette Share to announce Q2 results",
+   "link": "https://www.thehindubusinessline.com/companies/q2-results-today-live-updates-grasim-ind-eicher-motors-abb-india-tata-motors-pv-manipal-health-rail-vikas-nigam-godrej-ind-gillette-company-results-13-november-2026/article71696618.ece",
+   "summary": "Major companies including Tata Motors, Eicher Motors, and ABB India are releasing their second-quarter financial results today.",
+   "simple_words": "Investors are watching key companies reveal their latest profit reports.",
+   "category": "Companies",
+   "sentiment": "neutral",
+   "importance": 4,
+   "topic": "Quarterly Earnings"
+  },
+  {
+   "run_date": "2026-11-13",
+   "published_at": "2026-11-13 15:06",
+   "source": "BusinessLine",
+   "title": "Gold demand stays firm as lower prices draw festive buying",
+   "link": "https://www.thehindubusinessline.com/markets/gold/gold-demand-stays-firm-as-lower-prices-draw-festive-buying/article71696958.ece",
+   "summary": "Domestic gold prices remain firm as lower price levels encourage festive buying despite a recent dip in rates.",
+   "simple_words": "People are buying more gold because the prices have dropped recently.",
+   "category": "Markets",
+   "sentiment": "positive",
+   "importance": 3,
+   "topic": "Gold Prices"
   },
   {
    "run_date": "2026-11-13",
@@ -55,12 +94,12 @@
    "source": "RBI",
    "title": "Scheduled Banks’ Statement of Position in India as on October 31, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63971",
-   "summary": "The Reserve Bank of India has released the scheduled banks' statement of position as of October 31, 2026.",
-   "simple_words": "RBI published data on the financial health of Indian banks.",
+   "summary": "The RBI released the consolidated position statement for all scheduled commercial banks as of October 31, 2026.",
+   "simple_words": "Official data showing the financial status of India's banks.",
    "category": "RBI/Policy",
    "sentiment": "neutral",
    "importance": 2,
-   "topic": "RBI Banking Data"
+   "topic": "Banking Statistics"
   },
   {
    "run_date": "2026-11-13",
@@ -68,12 +107,12 @@
    "source": "Livemint",
    "title": "Up 17% in YTD! Small-cap hotel stock under  ₹200 jumps 4% after Q2 Results 2026; do you own?",
    "link": "https://www.livemint.com/market/stock-market-news/up-17-in-ytd-small-cap-hotel-stock-under-rs-200-jumps-4-after-q2-results-2026-do-you-own-11794558406332.html",
-   "summary": "A small-cap hotel stock climbed 4% following positive quarterly results, maintaining strong performance for the year to date.",
-   "simple_words": "A small hotel company's stock rose after good earnings news.",
+   "summary": "A small-cap hotel stock gained 4% following its strong Q2 results, continuing a positive trend for the year.",
+   "simple_words": "A small hotel company's stock price went up after good earnings.",
    "category": "Markets",
    "sentiment": "positive",
-   "importance": 2,
-   "topic": "Stock Market Performance"
+   "importance": 1,
+   "topic": "Stock Performance"
   },
   {
    "run_date": "2026-11-13",
@@ -81,12 +120,12 @@
    "source": "Livemint",
    "title": "Dividend stock: This multibagger share declares dividend of  ₹20 | Check record date, history, yield, returns",
    "link": "https://www.livemint.com/market/stock-market-news/dividend-stock-multibagger-share-ingersoll-rand-india-declares-dividend-of-20-check-record-date-history-yield-11794557139856.html",
-   "summary": "A multibagger stock has announced an interim dividend of ₹20 per share following robust September-quarter earnings growth.",
-   "simple_words": "A profitable company is paying shareholders a cash reward called a dividend.",
+   "summary": "A multibagger stock declared an interim dividend of ₹20 per share following impressive growth in its September-quarter earnings.",
+   "simple_words": "Company is sharing its profits with investors through cash payouts.",
    "category": "Companies",
    "sentiment": "positive",
-   "importance": 3,
-   "topic": "Dividend Declaration"
+   "importance": 2,
+   "topic": "Corporate Actions"
   },
   {
    "run_date": "2026-11-13",
@@ -94,12 +133,12 @@
    "source": "Livemint",
    "title": "Microsoft outage gums up markets, forces traders to use phones",
    "link": "https://www.livemint.com/market/stock-market-news/microsoft-outage-gums-up-markets-forces-traders-to-use-phones-11794560680458.html",
-   "summary": "A widespread Microsoft service outage disrupted operations across global financial markets, forcing traders to rely on alternative communication methods.",
-   "simple_words": "Tech issues at Microsoft made trading difficult for global financial markets.",
+   "summary": "A major Microsoft global outage caused significant disruptions to communication tools, affecting financial market operations and trading activities.",
+   "simple_words": "Tech problems at Microsoft made it hard for traders to work.",
    "category": "Global",
    "sentiment": "negative",
-   "importance": 4,
-   "topic": "Global Tech Outage"
+   "importance": 3,
+   "topic": "Tech Outage"
   },
   {
    "run_date": "2026-11-13",
@@ -107,12 +146,12 @@
    "source": "BusinessLine",
    "title": "Today’s Gold Rate in India November 13: Gold prices down in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur",
    "link": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-november-13-2026/article71697105.ece",
-   "summary": "Gold prices in various regional Indian cities have declined, reflecting the broader domestic trend in precious metal valuation.",
-   "simple_words": "Gold prices have dropped in multiple cities across India.",
+   "summary": "Gold prices for 22 and 24 carat saw a decline across major Indian cities including Coimbatore and Nagpur.",
+   "simple_words": "Gold has become slightly cheaper in several Indian cities today.",
    "category": "Markets",
    "sentiment": "neutral",
    "importance": 2,
-   "topic": "Gold Price Movement"
+   "topic": "Gold Prices"
   },
   {
    "run_date": "2026-11-13",
@@ -120,12 +159,12 @@
    "source": "BusinessLine",
    "title": "Today’s Gold Rate, November 13: Check Gold Rates in Delhi, Mumbai, Chennai",
    "link": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-delhi-mumbai-kolkata-chennai-bengaluru-hyderabad-pune-gold-rates-metro-cities-november-13-2026/article71697104.ece",
-   "summary": "Major metropolitan cities in India report a decline in both 22 and 24-carat gold prices today.",
-   "simple_words": "Gold prices are down in India's big cities today.",
+   "summary": "Gold prices in major metro cities like Delhi, Mumbai, and Chennai registered a decline on November 13.",
+   "simple_words": "Gold prices dropped in big cities, making it cheaper to buy.",
    "category": "Markets",
    "sentiment": "neutral",
    "importance": 2,
-   "topic": "Gold Price Movement"
+   "topic": "Gold Prices"
   },
   {
    "run_date": "2026-11-13",
@@ -133,12 +172,12 @@
    "source": "Livemint",
    "title": "23% return in 3 months: PL Capital sees 12.6% upside potential in Welspun Enterprises - Check target price, rationale",
    "link": "https://www.livemint.com/market/stock-market-news/23-return-in-3-months-pl-capital-sees-12-6-upside-potential-in-welspun-enterprises-check-target-price-rationale-11794556377827.html",
-   "summary": "PL Capital suggests a 12.6% upside for Welspun Enterprises, identifying technical support levels despite a minor recent price pullback.",
-   "simple_words": "Experts believe Welspun Enterprises stock price will rise soon.",
+   "summary": "PL Capital recommends a target price of up to ₹835 for Welspun Enterprises, citing technical support levels despite recent dips.",
+   "simple_words": "Experts believe this stock will rise in value soon.",
    "category": "Markets",
    "sentiment": "positive",
    "importance": 2,
-   "topic": "Stock Analysis"
+   "topic": "Stock Recommendations"
   },
   {
    "run_date": "2026-11-13",
@@ -146,8 +185,8 @@
    "source": "RBI",
    "title": "Government Stock - Full Auction Results",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63970",
-   "summary": "The government successfully auctioned 6.94% GS 2036 bonds worth ₹34,000 crore at a cut-off yield of 7.3203%.",
-   "simple_words": "The government raised money by selling bonds at a specific interest rate.",
+   "summary": "The RBI successfully conducted an auction for the 6.94% GS 2036 government security, accepting bids at a cut-off yield of 7.32%.",
+   "simple_words": "Government sold bonds to raise money, with set interest rates.",
    "category": "RBI/Policy",
    "sentiment": "neutral",
    "importance": 4,
@@ -159,8 +198,8 @@
    "source": "Livemint",
    "title": "Apollo Micro Systems shares: Why experts bet high on this multibagger defence stock after MSCI rejig? Target, stop-loss",
    "link": "https://www.livemint.com/market/stock-market-news/apollo-micro-systems-shares-why-experts-bet-high-on-this-multibagger-defence-stock-after-msci-rejig-target-stoploss-11794555639681.html",
-   "summary": "Apollo Micro Systems is expected to attract significant institutional inflows following its inclusion in the latest MSCI index rebalancing.",
-   "simple_words": "Apollo Micro Systems will likely get investment boost due to index changes.",
+   "summary": "Apollo Micro Systems is expected to receive significant institutional inflows following its inclusion in the MSCI index rebalancing.",
+   "simple_words": "Global fund changes should bring more money into this stock.",
    "category": "Markets",
    "sentiment": "positive",
    "importance": 3,
@@ -172,12 +211,12 @@
    "source": "Livemint",
    "title": "Promoter holding at 3-year high, FII ownership at 14-year low: Did insiders buy what FIIs sold?",
    "link": "https://www.livemint.com/market/stock-market-news/promoter-holding-at-3-year-high-fii-ownership-at-14-year-low-did-insiders-buy-what-fiis-sold-11794545962669.html",
-   "summary": "Corporate promoter holding has reached a three-year high while FII ownership hit a 14-year low, suggesting a shift in investor sentiment.",
-   "simple_words": "Company owners are buying more stock, while foreign investors are selling.",
+   "summary": "Promoter holdings have reached a three-year high while FII ownership hit a 14-year low, signaling shifting investor confidence patterns.",
+   "simple_words": "Company owners are buying shares while foreign investors are selling.",
    "category": "Markets",
    "sentiment": "neutral",
-   "importance": 4,
-   "topic": "Investor Shareholding Trends"
+   "importance": 3,
+   "topic": "Market Trends"
   },
   {
    "run_date": "2026-11-13",
@@ -185,10 +224,10 @@
    "source": "Livemint",
    "title": "Can Ola Electric’s pivot to dealership model hedge revenue decline?",
    "link": "https://www.livemint.com/market/mark-to-market/ola-electric-pivot-dealership-model-revenue-decline-11794551578116.html",
-   "summary": "Ola Electric’s shift to a dealership model has yet to demonstrate a positive impact on the company’s recent quarterly operating performance.",
-   "simple_words": "Ola Electric's new sales strategy isn't improving their financial results yet.",
+   "summary": "Ola Electric is shifting to a dealership model to boost performance, though financial results have yet to show significant improvement.",
+   "simple_words": "Ola is changing how it sells bikes to improve its business.",
    "category": "Companies",
-   "sentiment": "negative",
+   "sentiment": "neutral",
    "importance": 3,
    "topic": "Business Strategy"
   },
@@ -198,12 +237,12 @@
    "source": "Livemint",
    "title": "Mega AI Anthropic IPO details: Share price band, valuation, listing date - All you need to know about the upcoming issue",
    "link": "https://www.livemint.com/market/stock-market-news/mega-ai-anthropic-ipo-details-share-price-band-valuation-listing-date-all-you-need-to-know-about-the-upcoming-issue-11794552663877.html",
-   "summary": "AI startup Anthropic has initiated its IPO roadshow, aiming for a massive $64.4 billion valuation through a large share offering.",
-   "simple_words": "The AI company behind Claude is preparing to list its shares publicly.",
+   "summary": "Anthropic, the developer of Claude AI, has initiated its IPO roadshow, targeting a valuation of up to $64.4 billion.",
+   "simple_words": "A major AI company is preparing to list its shares publicly.",
    "category": "Global",
-   "sentiment": "neutral",
+   "sentiment": "positive",
    "importance": 4,
-   "topic": "Upcoming IPO"
+   "topic": "IPO News"
   },
   {
    "run_date": "2026-11-13",
@@ -211,12 +250,12 @@
    "source": "Economic Times",
    "title": "Cisco shares rally after earnings beat: 6 key things investors need to know",
    "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/cisco-shares-rally-after-earnings-beat-6-key-things-investors-need-to-know/slideshow/135794957.cms",
-   "summary": "Cisco shares rallied after reporting strong Q1 earnings, driven by high demand for AI-related data center technology.",
-   "simple_words": "Cisco's profits rose due to high demand for AI-focused tech gear.",
+   "summary": "Cisco shares surged following strong Q1 fiscal 2027 results driven by high demand for AI data centers.",
+   "simple_words": "Cisco made more money than expected due to AI demand.",
    "category": "Companies",
    "sentiment": "positive",
    "importance": 3,
-   "topic": "Global Corporate Earnings"
+   "topic": "Global Earnings"
   },
   {
    "run_date": "2026-11-13",
@@ -224,8 +263,8 @@
    "source": "RBI",
    "title": "Government Stock - Auction Results: Cut-off",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63969",
-   "summary": "RBI confirmed the cut-off price and yield for the 6.94% GS 2036 government bond auction, maintaining the earlier reported figures.",
-   "simple_words": "The central bank finalized the interest rates for a government bond sale.",
+   "summary": "The RBI confirmed the cut-off price of 97.43 and 7.3203% yield for the 6.94% GS 2036 government bond auction.",
+   "simple_words": "Final results for the government's latest bond sale are out.",
    "category": "RBI/Policy",
    "sentiment": "neutral",
    "importance": 4,
@@ -237,12 +276,12 @@
    "source": "Livemint",
    "title": "IRCTC, RVNL, IRFC, RailTel to IRCON: Railway stocks fall up to 3%; opportunity to buy on dip? Experts' views, target, SL",
    "link": "https://www.livemint.com/market/stock-market-news/irctc-rvnl-irfc-railtel-to-ircon-railway-stocks-fall-up-to-3-opportunity-to-buy-on-dip-experts-views-target-sl-11794553579136.html",
-   "summary": "Railway sector stocks faced a decline of up to 3% due to margin pressure and broader market headwinds affecting investor sentiment.",
-   "simple_words": "Railway company stocks fell as investors worry about their profit margins.",
+   "summary": "Railway stocks fell up to 3% amid margin pressure, leading experts to weigh in on whether this dip is a buying opportunity.",
+   "simple_words": "Railway stocks are cheaper now, but experts are cautious about risks.",
    "category": "Markets",
    "sentiment": "negative",
    "importance": 3,
-   "topic": "Sectoral Performance"
+   "topic": "Market Sector Trends"
   },
   {
    "run_date": "2026-11-13",
@@ -250,12 +289,12 @@
    "source": "Livemint",
    "title": "Kwality Walls shares rally 8.5% today, up over 53% in 6 months - Should you still buy ice cream stock? Q2 highlights",
    "link": "https://www.livemint.com/market/stock-market-news/kwality-walls-shares-rally-8-5-today-up-over-53-in-6-months-should-you-still-buy-ice-cream-stock-q2-highlights-11794552631919.html",
-   "summary": "Kwality Walls stock surged 8.5% today, continuing a strong multi-month trend as analysts monitor key support and resistance levels.",
-   "simple_words": "Shares of the ice cream maker are rising sharply in value.",
-   "category": "Markets",
+   "summary": "Kwality Walls shares rose 8.5%, continuing a strong rally that has seen the stock gain 94% from its March lows.",
+   "simple_words": "The ice cream company's stock is performing very well recently.",
+   "category": "Companies",
    "sentiment": "positive",
    "importance": 2,
-   "topic": "Stock Market Performance"
+   "topic": "Stock Performance"
   },
   {
    "run_date": "2026-11-13",
@@ -263,25 +302,12 @@
    "source": "BusinessLine",
    "title": "NSE opens European markets to Indian investors via GIFT City platform; adds 8,200-Plus ETFs",
    "link": "https://www.thehindubusinessline.com/markets/nse-opens-european-markets-to-indian-investors-via-gift-city-platform-adds-8200-plus-etfs/article71696832.ece",
-   "summary": "The NSE has expanded access for Indian investors to seven European markets via the GIFT City platform, adding over 8,200 ETFs.",
-   "simple_words": "Indian investors can now easily trade in major European stock markets.",
+   "summary": "The NSE has launched a platform at GIFT City allowing Indian investors to trade over 8,200 ETFs in European markets.",
+   "simple_words": "Indians can now easily invest in European markets from home.",
    "category": "Markets",
    "sentiment": "positive",
    "importance": 4,
-   "topic": "International Investing"
-  },
-  {
-   "run_date": "2026-11-13",
-   "published_at": "2026-11-13 12:24",
-   "source": "Livemint",
-   "title": "After IPO listing, NSE shares hit  ₹2,000 mark for the first time - Buy, sell or hold? What stock market experts say",
-   "link": "https://www.livemint.com/market/stock-market-news/after-ipo-listing-nse-shares-hit-rs-2-000-mark-for-the-first-time-buy-sell-or-hold-what-stock-market-experts-say-11794550519441.html",
-   "summary": "NSE shares crossed the psychological milestone of ₹2,000 for the first time since their IPO listing, drawing attention from market experts.",
-   "simple_words": "Stock Exchange shares hit a record high price after public listing.",
-   "category": "Markets",
-   "sentiment": "positive",
-   "importance": 4,
-   "topic": "Stock Market Performance"
+   "topic": "Market Expansion"
   },
   {
    "run_date": "2026-11-13",
@@ -289,25 +315,12 @@
    "source": "Economic Times",
    "title": "Tesla-SpaceX Merger: Musk eyes December deal announcement",
    "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/tesla-spacex-merger-musk-eyes-december-deal-announcement/slideshow/135793745.cms",
-   "summary": "Reports suggest Tesla and SpaceX are discussing a potential $3.5 trillion merger, which could be announced as early as December.",
-   "simple_words": "Elon Musk's two massive companies might combine into one huge business.",
+   "summary": "Reports suggest Tesla and SpaceX are in talks for a potential merger, which could be announced as early as December.",
+   "simple_words": "Two of Elon Musk's major companies might combine into one.",
    "category": "Global",
-   "sentiment": "neutral",
+   "sentiment": "positive",
    "importance": 5,
    "topic": "Corporate Mergers"
-  },
-  {
-   "run_date": "2026-11-13",
-   "published_at": "2026-11-13 12:20",
-   "source": "Livemint",
-   "title": "Zee Entertainment buyback: What happened with ZEEL stock after  ₹600 cr announcement? Check record date, price",
-   "link": "https://www.livemint.com/market/stock-market-news/zee-entertainment-announces-rs-600-cr-share-buyback-stock-down-3-check-record-date-price-other-key-things-to-know-11794549332632.html",
-   "summary": "Zee Entertainment has approved a ₹600 crore share buyback at ₹91 per share, excluding promoter participation, with a record date of November 25.",
-   "simple_words": "Zee Entertainment is buying back its own shares to reward investors.",
-   "category": "Companies",
-   "sentiment": "positive",
-   "importance": 3,
-   "topic": "Corporate Action"
   },
   {
    "run_date": "2026-11-13",
@@ -315,8 +328,8 @@
    "source": "Economic Times",
    "title": "MSCI rejig: Which stocks may see the biggest inflows & outflows?",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/msci-rejig-which-stocks-may-see-the-biggest-inflows-amp-outflows/slideshow/135792280.cms",
-   "summary": "MSCI announced index modifications effective November 30, which are expected to drive significant capital inflows into select Indian equities like LIC and Coforge.",
-   "simple_words": "Changes to global investment indexes will bring more money into Indian stocks.",
+   "summary": "MSCI's index modifications, effective November 30, are expected to draw significant investment inflows into stocks like Coforge and LIC.",
+   "simple_words": "Changes in global stock indexes will bring more money to Indian companies.",
    "category": "Markets",
    "sentiment": "positive",
    "importance": 4,
@@ -328,11 +341,11 @@
    "source": "BusinessLine",
    "title": "FGLOC to organise first Gold Summit in Kochi on November 17",
    "link": "https://www.thehindubusinessline.com/money-and-banking/fgloc-to-organise-first-gold-summit-in-kochi-on-november-17/article71696668.ece",
-   "summary": "The first Gold Summit is scheduled for November 17 in Kochi to address industry challenges and improve operational efficiency in the gold sector.",
-   "simple_words": "A meeting for gold businesses to solve problems and improve trade.",
+   "summary": "The first Gold Summit in Kochi on November 17 will address operational challenges and growth strategies for the industry.",
+   "simple_words": "Industry experts are meeting to discuss the future of the gold business.",
    "category": "Economy",
    "sentiment": "neutral",
-   "importance": 2,
+   "importance": 1,
    "topic": "Industry Event"
   },
   {
@@ -341,12 +354,12 @@
    "source": "BusinessLine",
    "title": "BSE widens WTI crude oil options strike range, cuts transaction charges",
    "link": "https://www.thehindubusinessline.com/markets/bse-widens-wti-crude-oil-options-strike-range-cuts-transaction-charges/article71696576.ece",
-   "summary": "The BSE has revised WTI crude oil options specifications, including wider strike ranges and lower transaction costs, effective November 27.",
-   "simple_words": "Trading oil options on the BSE will become cheaper and more flexible.",
+   "summary": "BSE has revised WTI crude oil options by widening the strike range and reducing transaction charges to encourage trading.",
+   "simple_words": "The stock exchange is making oil trading cheaper and easier.",
    "category": "Markets",
    "sentiment": "positive",
-   "importance": 3,
-   "topic": "Market Infrastructure"
+   "importance": 2,
+   "topic": "Trading Rules"
   },
   {
    "run_date": "2026-11-13",
@@ -354,12 +367,12 @@
    "source": "BusinessLine",
    "title": "Crystal Crop Protection to raise up to ₹456 cr via IPO; issue opens on Nov 18",
    "link": "https://www.thehindubusinessline.com/markets/crystal-crop-protection-to-raise-up-to-456-cr-via-ipo-issue-opens-on-nov-18/article71696593.ece",
-   "summary": "Crystal Crop Protection plans to raise ₹456 crore via an IPO opening on November 18, with a price band set between ₹259 and ₹272.",
+   "summary": "Crystal Crop Protection announced its IPO, aiming to raise ₹456 crore with a price band set between ₹259 and ₹272.",
    "simple_words": "A new company is selling shares to the public to raise money.",
    "category": "Companies",
    "sentiment": "neutral",
    "importance": 3,
-   "topic": "Upcoming IPO"
+   "topic": "IPO News"
   },
   {
    "run_date": "2026-11-13",
@@ -367,12 +380,12 @@
    "source": "Economic Times",
    "title": "Carlsberg said to start road show for $600 million India IPO",
    "link": "https://economictimes.indiatimes.com/markets/ipos/fpos/carlsberg-said-to-start-road-show-for-600-million-india-ipo/articleshow/135790402.cms",
-   "summary": "Carlsberg is preparing a $600 million IPO for its Indian operations, aiming for a potential $4 billion valuation by early 2027.",
-   "simple_words": "The beer maker is planning to list its Indian business on the stock market.",
+   "summary": "Carlsberg is preparing for a $600 million IPO for its Indian operations, eyeing a $4 billion valuation by early 2027.",
+   "simple_words": "Carlsberg plans to list its Indian branch on the stock market.",
    "category": "Companies",
    "sentiment": "positive",
-   "importance": 3,
-   "topic": "Upcoming IPO"
+   "importance": 4,
+   "topic": "IPO News"
   },
   {
    "run_date": "2026-11-13",
@@ -380,9 +393,9 @@
    "source": "Economic Times",
    "title": "Top pension fund to buy more India state bonds on high yields",
    "link": "https://economictimes.indiatimes.com/markets/bonds/top-pension-fund-to-buy-more-india-state-bonds-on-high-yields/articleshow/135789980.cms",
-   "summary": "SBI Pension Fund plans to increase its allocation toward high-yield state government bonds to secure stable income amidst rising market supply.",
-   "simple_words": "A major pension fund is buying more government debt for steady returns.",
-   "category": "Economy",
+   "summary": "SBI Pension Fund plans to increase its exposure to state government bonds to capitalize on higher yields and steady income.",
+   "simple_words": "A big pension fund is putting more money into safe government debt.",
+   "category": "Banking",
    "sentiment": "neutral",
    "importance": 3,
    "topic": "Investment Strategy"
@@ -393,8 +406,8 @@
    "source": "RBI",
    "title": "Result of the 3-day Variable Rate Reverse Repo (VRRR) auction held on November 13, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63968",
-   "summary": "The RBI conducted a 3-day Variable Rate Reverse Repo auction, absorbing ₹38,592 crore of liquidity from the banking system.",
-   "simple_words": "The central bank took some excess money out of the banking system.",
+   "summary": "The RBI received offers worth ₹38,592 crore in its 3-day variable rate reverse repo auction at a cut-off rate of 5.49%.",
+   "simple_words": "RBI is managing cash in the banking system through short-term auctions.",
    "category": "RBI/Policy",
    "sentiment": "neutral",
    "importance": 3,
@@ -406,12 +419,12 @@
    "source": "Economic Times",
    "title": "India bonds under pressure before debt supply; hot inflation prints pinch further",
    "link": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-under-pressure-before-debt-supply-hot-inflation-prints-pinch-further/articleshow/135789760.cms",
-   "summary": "Rising domestic and U.S. inflation figures have pressured Indian government bond yields, with expectations of a December RBI rate hike.",
-   "simple_words": "Bond prices are falling as investors fear higher interest rates due to inflation.",
-   "category": "Economy",
+   "summary": "Indian bond yields rose as inflation concerns and potential interest rate hikes by the RBI in December put pressure on the market.",
+   "simple_words": "Inflation fears are making government borrowing more expensive for the country.",
+   "category": "RBI/Policy",
    "sentiment": "negative",
-   "importance": 4,
-   "topic": "Interest Rate Expectations"
+   "importance": 5,
+   "topic": "Interest Rates/Inflation"
   },
   {
    "run_date": "2026-11-13",
@@ -419,8 +432,8 @@
    "source": "BusinessLine",
    "title": "Rupee rises 7 paise to 94.05 against US dollar in early trade",
    "link": "https://www.thehindubusinessline.com/markets/forex/rupee-rises-7-paise-to-9405-against-us-dollar-in-early-trade/article71696539.ece",
-   "summary": "The rupee gained 7 paise against the US dollar, though strength in the dollar continues to weigh on the currency's recovery.",
-   "simple_words": "The Indian Rupee value rose slightly against the US Dollar.",
+   "summary": "The Indian Rupee rose slightly against the US Dollar, though gains were limited by continued strength in the American currency.",
+   "simple_words": "The rupee gained a little value against the dollar today.",
    "category": "Economy",
    "sentiment": "neutral",
    "importance": 3,
@@ -432,8 +445,8 @@
    "source": "RBI",
    "title": "Result of Underwriting Auction conducted on November 13, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63967",
-   "summary": "The RBI has set the underwriting commission rates for the latest auction of government securities to primary dealers.",
-   "simple_words": "The central bank decided on fees for banks helping sell government bonds.",
+   "summary": "The RBI conducted an underwriting auction for government securities to set commission rates for primary dealers.",
+   "simple_words": "Central bank is setting fees for banks helping sell government debt.",
    "category": "RBI/Policy",
    "sentiment": "neutral",
    "importance": 2,
@@ -445,25 +458,12 @@
    "source": "BusinessLine",
    "title": "G-Sec yields harden on retail inflation breaching the 6% mark",
    "link": "https://www.thehindubusinessline.com/markets/g-sec-yields-harden-on-retail-inflation-breaching-the-6-mark/article71696503.ece",
-   "summary": "Benchmark 10-year G-Sec yields hardened to 7.30% following retail inflation breaching 6%, fueling speculation of a repo rate hike.",
-   "simple_words": "High inflation is making government borrowing costs rise, likely leading to rate hikes.",
-   "category": "Economy",
+   "summary": "Benchmark 10-year bond yields climbed to 7.30% following retail inflation data, increasing market expectations for an RBI rate hike.",
+   "simple_words": "High inflation is leading to fears of higher interest rates soon.",
+   "category": "RBI/Policy",
    "sentiment": "negative",
    "importance": 5,
-   "topic": "Interest Rate Expectations"
-  },
-  {
-   "run_date": "2026-11-13",
-   "published_at": "2026-11-13 09:29",
-   "source": "BusinessLine",
-   "title": "Nvidia PE falls to 14-year low, but CEO exit and AI worries cloud the bargain",
-   "link": "https://www.thehindubusinessline.com/markets/stock-markets/nvidia-pe-falls-to-14-year-low-but-ceo-exit-and-ai-worries-cloud-the-bargain/article71696470.ece",
-   "summary": "Nvidia’s P/E ratio has reached a 14-year low, but management turnover and AI market concerns keep investor confidence uncertain.",
-   "simple_words": "Nvidia shares are historically cheap, but internal company problems worry investors.",
-   "category": "Global",
-   "sentiment": "negative",
-   "importance": 4,
-   "topic": "Global Tech Outage"
+   "topic": "Interest Rates/Inflation"
   },
   {
    "run_date": "2026-11-13",
@@ -471,11 +471,11 @@
    "source": "Economic Times",
    "title": "Aditya Birla Capital among 9 stocks showing White Marubozu Pattern",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/aditya-birla-capital-among-9-stocks-showing-white-marubozu-pattern/slideshow/135788959.cms",
-   "summary": "Nine Nifty500 stocks, including Aditya Birla Capital, have flashed the bullish 'White Marubozu' pattern, indicating strong buying momentum.",
-   "simple_words": "Several stocks showed a strong upward price trend in recent trading.",
+   "summary": "Aditya Birla Capital and eight other stocks showed a bullish 'White Marubozu' technical pattern, suggesting potential upward price momentum.",
+   "simple_words": "Technical charts show these stocks might keep going up.",
    "category": "Markets",
    "sentiment": "positive",
-   "importance": 2,
+   "importance": 1,
    "topic": "Technical Indicators"
   },
   {
@@ -484,11 +484,11 @@
    "source": "Economic Times",
    "title": "One97 Communications among 3 stocks closing above VWAP",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/one97-communications-among-3-stocks-closing-above-vwap/slideshow/135788620.cms",
-   "summary": "One97 Communications is among three Nifty500 stocks that closed significantly above their volume-weighted average price, suggesting positive price action.",
-   "simple_words": "Some stocks are performing better than their average traded price.",
+   "summary": "One97 Communications was among three Nifty500 stocks that closed above their volume-weighted average price, indicating strong buying activity.",
+   "simple_words": "Investors are buying this stock more than average, signaling strength.",
    "category": "Markets",
    "sentiment": "positive",
-   "importance": 2,
+   "importance": 1,
    "topic": "Technical Indicators"
   },
   {
@@ -497,11 +497,11 @@
    "source": "Economic Times",
    "title": "Godrej Industries among 4 stocks showing RSI trending up",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/godrej-industries-among-4-stocks-showing-rsi-trending-up/slideshow/135788392.cms",
-   "summary": "Godrej Industries and three other Nifty500 stocks show strengthening price momentum as their RSI indicators cross the 50 mark.",
-   "simple_words": "Technical signs suggest these specific stocks are gaining buying strength.",
+   "summary": "Godrej Industries and three other stocks featured in RSI trending up scans, showing strengthening price momentum after recent gains.",
+   "simple_words": "This stock is showing signs of strong upward price movement.",
    "category": "Markets",
    "sentiment": "positive",
-   "importance": 2,
+   "importance": 1,
    "topic": "Technical Indicators"
   },
   {
@@ -510,12 +510,12 @@
    "source": "RBI",
    "title": "Money Market Operations as on November 12, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63966",
-   "summary": "The Reserve Bank of India has published the money market operations report for November 12, 2026.",
-   "simple_words": "RBI provided data on daily money trading between banks.",
+   "summary": "The RBI released the money market operations statement summarizing liquidity and interest rates for November 12, 2026.",
+   "simple_words": "Daily report on how money and interest rates moved in banking.",
    "category": "RBI/Policy",
    "sentiment": "neutral",
    "importance": 2,
-   "topic": "RBI Banking Data"
+   "topic": "Banking Statistics"
   },
   {
    "run_date": "2026-11-13",
@@ -523,8 +523,8 @@
    "source": "Economic Times",
    "title": "Positive Breakout: These 8 stocks close above their 200 DMA",
    "link": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-close-above-their-200-dma/slideshow/135787610.cms",
-   "summary": "Eight Nifty500 stocks closed above their 200-day moving average, a technical sign often associated with a positive shift in price trend.",
-   "simple_words": "These stocks are trading above their long-term average price, showing growth.",
+   "summary": "Eight Nifty500 stocks, including potential breakouts, closed above their 200-day moving averages, signaling a shift in long-term price trends.",
+   "simple_words": "These stocks are performing better than their average over the last year.",
    "category": "Markets",
    "sentiment": "positive",
    "importance": 2,
